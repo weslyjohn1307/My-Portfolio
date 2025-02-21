@@ -1,4 +1,4 @@
-// Sample portfolio images (replace with your own URLs or upload system)
+// Sample portfolio images (replace with your own URLs)
 const portfolioImages = [
     'https://via.placeholder.com/400x300.png?text=Design+1',
     'https://via.placeholder.com/400x500.png?text=Design+2',
