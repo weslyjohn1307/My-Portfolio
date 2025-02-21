@@ -1,168 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Graphic Design Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            background: url('https://www.transparenttextures.com/patterns/light-rays.png') repeat, #FFFFFF;
-            color: #1E2A44;
-            line-height: 1.6;
-            font-family: 'Open Sans', sans-serif;
-        }
-        header {
-            background: #1E2A44;
-            color: #D4AF37;
-            padding: 1rem;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-        header h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-        }
-        nav a {
-            color: #D4AF37;
-            margin: 0 20px;
-            text-decoration: none;
-            font-family: 'Open Sans', sans-serif;
-        }
-        nav a:hover {
-            color: #FFFFFF;
-        }
-        .hero {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 60px;
-            text-align: center;
-        }
-        .hero h2 {
-            font-family: 'Playfair Display', serif;
-            color: #1E2A44;
-            font-size: 2.2rem;
-        }
-        .hero p {
-            color: #1E2A44;
-            margin-top: 10px;
-        }
-        .gallery {
-            padding: 40px;
-            column-count: 3; /* Adjust number of columns */
-            column-gap: 20px;
-        }
-        .gallery-item {
-            break-inside: avoid;
-            margin-bottom: 20px;
-        }
-        .gallery-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        .gallery-item img:hover {
-            transform: scale(1.05);
-        }
-        .gallery-item p {
-            font-size: 0.9rem;
-            text-align: center;
-            color: #1E2A44;
-        }
-        .about, .contact {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 40px;
-            text-align: center;
-        }
-        .about h2, .contact h2 {
-            font-family: 'Playfair Display', serif;
-            color: #1E2A44;
-        }
-        .christian-icon {
-            font-size: 2rem;
-            color: #D4AF37;
-            margin: 10px;
-        }
-        footer {
-            background: #1E2A44;
-            color: #D4AF37;
-            padding: 20px;
-            text-align: center;
-        }
-        @media (max-width: 768px) {
-            .gallery {
-                column-count: 2;
-            }
-        }
-        @media (max-width: 480px) {
-            .gallery {
-                column-count: 1;
-            }
-        }
-    </style>
+    <title>Graphic Design Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <section class="hero" id="home">
-        <h2>Designing with Faith & Creativity</h2>
-        <p>Inspired by the beauty of creation.</p>
-        <div class="christian-icon">✝</div> <!-- Cross symbol -->
+    <!-- Main Sections -->
+    <section id="home" class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Graphic Design with a Spiritual Touch</p>
     </section>
 
-    <section class="gallery" id="portfolio">
-        <!-- Add as many gallery items as you want -->
-        <div class="gallery-item">
-            <img src="path-to-your-image1.jpg" alt="Design 1">
-            <p>Project 1 Description</p>
-        </div>
-        <div class="gallery-item">
-            <img src="path-to-your-image2.jpg" alt="Design 2">
-            <p>Project 2 Description</p>
-        </div>
-        <div class="gallery-item">
-            <img src="path-to-your-image3.jpg" alt="Design 3">
-            <p>Project 3 Description</p>
-        </div>
-        <div class="gallery-item">
-            <img src="path-to-your-image4.jpg" alt="Design 4">
-            <p>Project 4 Description</p>
-        </div>
-        <!-- Add more items here -->
-    </section>
-
-    <section class="about" id="about">
+    <section id="about">
         <h2>About Me</h2>
-        <p>I’m [Your Name], a graphic designer guided by faith and a love for visual storytelling. My work blends spirituality with creativity, specializing in [e.g., Christian-themed designs, branding, etc.].</p>
-        <div class="christian-icon">🕊</div> <!-- Dove symbol -->
+        <p>I’m a graphic designer inspired by faith, creating meaningful designs with elegance and purpose.</p>
     </section>
 
-    <section class="contact" id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: your.email@example.com</p>
-        <p>Follow me: <a href="#">Instagram</a> | <a href="#">Behance</a></p>
-        <div class="christian-icon">📖</div> <!-- Open Bible symbol -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="gallery" id="gallery">
+            <!-- Images will be dynamically added here -->
+        </div>
     </section>
 
-    <footer>
-        <p>© 2025 Your Name. Designed with Grace.</p>
-    </footer>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email me at: designer@example.com</p>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
