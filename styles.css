@@ -2,8 +2,10 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: url('https://www.transparenttextures.com/patterns/light-rays.png') repeat, #fff;
+    background: #fff;
     color: #333;
+    position: relative;
+    overflow-x: hidden; /* Prevent horizontal scroll from animation */
 }
 
 h1, h2 {
@@ -54,18 +56,6 @@ h1, h2 {
     position: relative;
 }
 
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('https://www.transparenttextures.com/patterns/cross.png') repeat;
-    opacity: 0.1;
-    z-index: -1;
-}
-
 /* Sections */
 section {
     padding: 4rem 2rem;
@@ -96,16 +86,25 @@ section#about, section#contact {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Dynamic Texture Overlay */
-body::after {
+/* Moving Texture */
+body::before {
     content: '';
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 200%; /* Extra width for smooth horizontal movement */
     height: 100%;
-    background: url('https://www.transparenttextures.com/patterns/soft-texture.png') repeat;
-    opacity: 0.05;
-    pointer-events: none;
+    background: url('https://www.transparenttextures.com/patterns/light-rays.png') repeat;
+    opacity: 0.1;
     z-index: -1;
+    animation: moveTexture 20s linear infinite; /* Smooth, continuous movement */
+}
+
+@keyframes moveTexture {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Moves half its width for seamless looping */
+    }
 }
