@@ -21,23 +21,7 @@ function loadGallery() {
     });
 }
 
-// Add Christian symbols dynamically
-function addSymbols() {
-    const symbols = ['✝', '🕊️', '📖']; // Cross, Dove, Bible
-    const randomSymbol = symbols[Math.floor(Math.random() * symbols.length)];
-    const symbolDiv = document.createElement('div');
-    symbolDiv.textContent = randomSymbol;
-    symbolDiv.style.position = 'absolute';
-    symbolDiv.style.fontSize = '2rem';
-    symbolDiv.style.color = '#d4af37';
-    symbolDiv.style.opacity = '0.3';
-    symbolDiv.style.left = `${Math.random() * 90}%`;
-    symbolDiv.style.top = `${Math.random() * 90}%`;
-    document.body.appendChild(symbolDiv);
-}
-
 // Initialize on page load
 window.onload = () => {
     loadGallery();
-    for (let i = 0; i < 5; i++) addSymbols(); // Add 5 random symbols
 };
